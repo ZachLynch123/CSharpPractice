@@ -1,0 +1,11 @@
+C:\Users\Zach\projects\lyndacs\algorithms\bin\Debug\netcoreapp2.2\algorithms.deps.json
+C:\Users\Zach\projects\lyndacs\algorithms\bin\Debug\netcoreapp2.2\algorithms.runtimeconfig.json
+C:\Users\Zach\projects\lyndacs\algorithms\bin\Debug\netcoreapp2.2\algorithms.runtimeconfig.dev.json
+C:\Users\Zach\projects\lyndacs\algorithms\bin\Debug\netcoreapp2.2\algorithms.dll
+C:\Users\Zach\projects\lyndacs\algorithms\bin\Debug\netcoreapp2.2\algorithms.pdb
+C:\Users\Zach\projects\lyndacs\algorithms\obj\Debug\netcoreapp2.2\algorithms.csprojAssemblyReference.cache
+C:\Users\Zach\projects\lyndacs\algorithms\obj\Debug\netcoreapp2.2\algorithms.csproj.CoreCompileInputs.cache
+C:\Users\Zach\projects\lyndacs\algorithms\obj\Debug\netcoreapp2.2\algorithms.AssemblyInfoInputs.cache
+C:\Users\Zach\projects\lyndacs\algorithms\obj\Debug\netcoreapp2.2\algorithms.AssemblyInfo.cs
+C:\Users\Zach\projects\lyndacs\algorithms\obj\Debug\netcoreapp2.2\algorithms.dll
+C:\Users\Zach\projects\lyndacs\algorithms\obj\Debug\netcoreapp2.2\algorithms.pdb
