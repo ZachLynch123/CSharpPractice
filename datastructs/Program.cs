@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace algorithms
+namespace datastructs
 {
     class Program
     {
