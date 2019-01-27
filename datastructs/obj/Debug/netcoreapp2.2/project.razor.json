@@ -1,14 +1,6 @@
 {
-  "ProjectFilePath": "c:\\Users\\Zach\\projects\\lyndacs\\datastructs\\datastructs.csproj",
+  "ProjectFilePath": "d:\\projects\\cSharp\\datastructs\\datastructs.csproj",
   "TargetFramework": "netcoreapp2.2",
   "TagHelpers": [],
-  "Configuration": {
-    "ConfigurationName": "UnsupportedRazor",
-    "LanguageVersion": "1.0",
-    "Extensions": [
-      {
-        "ExtensionName": "UnsupportedRazorExtension"
-      }
-    ]
-  }
+  "Configuration": null
 }
