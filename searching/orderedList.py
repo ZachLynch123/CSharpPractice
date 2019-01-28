@@ -1,6 +1,7 @@
 # binary search
 items = [6, 8, 19, 20, 23, 49, 87]
 
+
 def binarySearch(item, itemList):
     # get list size
     listSize = len(itemList) - 1
