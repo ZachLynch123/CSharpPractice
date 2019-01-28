@@ -57,10 +57,51 @@ def mergesort(dataset):
             j += 1
             k += 1
 
+# QuickSort
+# Also a divide and conquer algorithm like a merge sort
+# Also uses recurion and performs better than merge sort
+# worse case is O(n2) when data is mostly sorted already
+
+def quickSort(dataset, first, last):
+    if first < last:
+        # calculate the split point
+        pivotIndex = partition(dataset, first, last)
+
+        #now sort the two partitions
+        quickSort(dataset, first, pivotIndex-1)
+        quickSort(dataset, pivotIndex+1, last)
+
+def partition(dataValues, first, last):
+    # choose the first item as the pivot value
+    pivotValue = dataValues[first]
+    # establish the upper and lower indexes
+    lower = first + 1
+    upper = last
+
+    # start searching for the crossing point
+    done = False
+    while not done: 
+        # TODO: advance the lower index
+
+        # TODO: advance upper index
+
+        # TODO: if the two indexes cross, we found split point
+        #  
+        pass
+    # when the split point is found, exchange the first pivot value
+
+    temp = dataValues[first]
+    dataValues[first] = dataValues[upper]
+    dataValues[upper] = temp
+
+    # return the split point index
+    return upper
+
 def main():
     list1 = [6, 20, 8, 19, 56, 27, 87, 49, 53]
     print(items)
-    mergesort(items)
+    quickSort(items)
+    # mergesort(items)
     print(items)
     # bubbleSort(list1)
     # print("Result: ", list1)
