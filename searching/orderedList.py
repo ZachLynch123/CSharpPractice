@@ -9,7 +9,18 @@ def binarySearch(item, itemList):
     upInx = listSize
 
     while lowInx <= upInx:
-        pass
+        # calc midpoint
+        midPt = (lowInx + upInx) // 2
+
+        # if found return index
+        if itemList[midPt] == item:
+            return midPt
+
+        # otherwise get next midpoint
+        if item > itemList[midPt]:
+            lowInx = midPt + 1
+        else: 
+            upInx = midPt - 1
     
     if lowInx > upInx:
         return None
