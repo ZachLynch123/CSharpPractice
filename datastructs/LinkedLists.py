@@ -50,6 +50,16 @@ class LinkedList(object):
         # TODO: delete an item at an index
         if index > self.count - 1:
             return
+        if index == 0:
+            self.head = self.head.get_next()
+        else: 
+            tempIndex = 0
+            node = self.head
+            while (tempIndex < index - 1):
+                node = node.get_next()
+                tempIndex += 1
+            node.set_next(node.get_next().get_next())
+            self.count -= 1
 
     # Dumps content of list
     def dump_list(self):
@@ -73,3 +83,6 @@ print("Item count: ", itemList.get_count())
 print("Finding item: ", itemList.find(13))
 print("Finding item: ", itemList.find(445))
 
+itemList.deleteAt(3)
+itemList.dump_list()
+print("Item count: ", itemList.get_count())
