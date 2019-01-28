@@ -67,7 +67,7 @@ def quickSort(dataset, first, last):
         # calculate the split point
         pivotIndex = partition(dataset, first, last)
 
-        #now sort the two partitions
+        # now sort the two partitions
         quickSort(dataset, first, pivotIndex-1)
         quickSort(dataset, pivotIndex+1, last)
 
@@ -82,12 +82,19 @@ def partition(dataValues, first, last):
     done = False
     while not done: 
         # TODO: advance the lower index
-
+            while (lower <= upper and dataValues[lower] <= pivotValue):
+                lower += 1
         # TODO: advance upper index
+            while (lower >= upper and dataValues[lower] >= pivotValue):
+                upper -= 1
 
         # TODO: if the two indexes cross, we found split point
-        #  
-        pass
+            if upper < lower:
+                done = True        
+            else:
+                temp = dataValues[lower]
+                dataValues[lower] = dataValues[upper]
+                dataValues[upper] = temp
     # when the split point is found, exchange the first pivot value
 
     temp = dataValues[first]
@@ -100,7 +107,7 @@ def partition(dataValues, first, last):
 def main():
     list1 = [6, 20, 8, 19, 56, 27, 87, 49, 53]
     print(items)
-    quickSort(items)
+    quickSort(items, 0 , len(items)-1)
     # mergesort(items)
     print(items)
     # bubbleSort(list1)
